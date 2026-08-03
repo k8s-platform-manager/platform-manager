@@ -1,0 +1,54 @@
+---
+title: Platform Manager
+description: An open-source platform controller that separates mechanism from meaning, taking SCORE workload specifications as intent.
+template: splash
+hero:
+  tagline: An open-source platform controller — an alternative to the Humanitec Platform Orchestrator — that resolves application intent into infrastructure without ever embedding organizational semantics.
+  actions:
+    - text: Read RFC 0001
+      link: /rfcs/rfc0001-platform-controller-domain-model/
+      icon: right-arrow
+    - text: View on GitHub
+      link: https://github.com/k8s-platform-manager/platform-manager
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What is Platform Manager?
+
+Platform Manager is a **platform controller**: a system that takes [SCORE](https://score.dev) workload specifications as intent and resolves them into running infrastructure, without the controller itself ever having to understand what that infrastructure *means* to your organization.
+
+The design rests on separating three roles:
+
+<CardGrid stagger>
+	<Card title="The controller" icon="rocket">
+		Provides *mechanism*: matching, resolution, reconciliation, provisioning orchestration, and explainability. It never embeds organizational semantics.
+	</Card>
+	<Card title="The platform team" icon="setting">
+		Provides *meaning*: organizational vocabulary, policies, resource definitions, and provisioning wiring for their organization.
+	</Card>
+	<Card title="The application team" icon="pencil">
+		Provides *intent*: SCORE workload specifications and resource declarations expressed in the organization's own vocabulary.
+	</Card>
+</CardGrid>
+
+## Design principles
+
+- **Separate mechanism from meaning.** The controller matches, resolves, reconciles, and explains. Organizations define vocabulary, attributes, policies, implementations, and provisioning logic.
+- **Intent before infrastructure.** Applications express intent; organizations define how intent maps onto infrastructure; infrastructure details stay implementation details.
+- **Explainability is first-class.** Every resolution outcome — success, failure, pending — is traceable: why an implementation matched, why others didn't, and what context was used.
+- **Constraint solving over inheritance.** Resolution is attribute/constraint-based, not hierarchy-based. The resolver never invents infrastructure; provisioning is a separate, downstream concern.
+- **Order independence.** The system is level-triggered and reconciling — no rule depends on the order in which objects are applied.
+
+## Where to go next
+
+<CardGrid stagger>
+	<Card title="Domain model" icon="open-book">
+		Read [RFC 0001](/rfcs/rfc0001-platform-controller-domain-model/) for the full entity model, ownership boundaries, and core semantics.
+	</Card>
+	<Card title="Requests for Comments" icon="document">
+		Browse the [RFCs](/rfcs/rfc0001-platform-controller-domain-model/) section for design proposals as they're drafted and reviewed.
+	</Card>
+</CardGrid>
