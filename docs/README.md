@@ -17,7 +17,7 @@ Documentation site for Platform Manager, built with [Astro Starlight](https://st
 └── package.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in `src/content/docs/`. Each file is exposed as a route based on its file name. RFCs are numbered (`rfc0001-...`, `rfc0002-...`) to preserve reading order in the sidebar.
+Starlight looks for `.md` or `.mdx` files in `src/content/docs/`. Each file is exposed as a route based on its file name. RFCs are numbered (`rfc-001-...`, `rfc-002-...`) to preserve reading order in the sidebar.
 
 ## Commands
 

@@ -22,7 +22,7 @@ Every entity in the domain model is owned by exactly one of these parties, and t
 
 ## Documentation
 
-Full documentation, including the domain model and design rationale, lives in [`docs/`](docs) and is published via GitHub Pages. Design proposals are tracked as Requests for Comments — start with [RFC 0001: Platform Controller Domain Model](docs/src/content/docs/rfcs/rfc0001-platform-controller-domain-model.md), which defines the entities, relationships, and ownership boundaries this project is built on.
+Full documentation, including the domain model and design rationale, lives in [`docs/`](docs) and is published via GitHub Pages. Design proposals are tracked as Requests for Comments — start with [RFC 0001: Platform Controller Domain Model](docs/src/content/docs/rfcs/rfc-001-domain-model-and-ownership.md), which defines the entities, relationships, and ownership boundaries this project is built on.
 
 To run the docs site locally:
 
