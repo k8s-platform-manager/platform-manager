@@ -6,7 +6,7 @@ description: Domain model, ownership boundaries, and structural semantics of an 
 | | |
 |---|---|
 | **Status** | Draft for review |
-| **Series** | RFC-001 (this document) · [RFC-002: The SCORE Profile](rfc-002-score-profile.md) · [RFC-003: Resolution & the Attribute Model](rfc-003-resolution-and-attribute-model.md) · RFC-004 Identity (future) · RFC-005 Explainability API (future) · RFC-006 VCS Events & Ephemeral Lifecycle (future) |
+| **Series** | RFC-001 (this document) · [RFC-002: The SCORE Profile](rfcs/rfc-002-score-profile) · [RFC-003: Resolution & the Attribute Model](rfcs/rfc-003-resolution-and-attribute-model) · RFC-004 Identity (future) · RFC-005 Explainability API (future) · RFC-006 VCS Events & Ephemeral Lifecycle (future) |
 | **Scope** | Domain model, ownership boundaries, and structural semantics of an open-source platform controller (alternative to the Humanitec Platform Orchestrator) |
 | **Intent source** | [SCORE](https://score.dev) workload specifications (interpretation specified in RFC-002) |
 | **Date** | 2026-08-03 · revised 2026-08-04 · split into series 2026-08-04 |
